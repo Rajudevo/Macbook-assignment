@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap link -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- css file -->
+   <style>
+       .promo-btn{
+        
+          background-image: linear-gradient(salmon, tomato);
+          text-shadow: 5px 10px 20px gray;
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+          border-radius: 5px;
+           margin: 0;
+       }
+   </style>
+</head>
+<body>
+
+ <section>
+     <div class="container d-flex ">
+         <div class="row ">
+             <div class="col-md-6">
+                 <img  class="img-fluid" src="images/mac.png" alt="">
+             </div>
+             <div class="col-md-6">
+                 <div>
+                    <h1>Customize your 13‑inch MacBook Pro </h1>
+                    <p>Apple M1 chip with 8‑core CPU, 8‑core GPU, and 16‑core Neural Engine
+                       8GB unified memory
+                       256GB SSD storage
+                       13-inch Retina display with True Tone
+                       Backlit Magic Keyboard - US English</p>
+                 </div>
+
+                 
+                    <h4>Memory</h4>
+                        <div class="mb-4">
+                    <button id="8gb-memory" type="text" class="btn btn-secondary "  >8GB unfiled memory</button>
+                    <button id="16gb-memory" type="button" class="btn btn-secondary" > 16GB unfiled memory </button> 
+                 </div>
+                 
+                   
+                        
+                        <div class="mb-4" >
+                            <h4>Storage</h4>
+                 
+                 <button id="256gb-storage" type="button" class="btn btn-secondary">256GB SSD storage</button>
+                 <button id="512gb-storage" type="button" class="btn btn-secondary">512GB SSD storage</button>
+                 <button id="1tb-storage" type="button" class="btn btn-secondary">1TB SSD storage</button>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4>Choose your delivery option</h4>
+                       
+                        <button id="free-delivery" type="button" class="btn btn-secondary">Friday, Aug 25 free delivery</button>
+                        <button id="paid-delivery" type="button" class="btn btn-secondary">Friday, Aug 21 delivery charge $20</button>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="row">
+                           <div class="col-md-6">
+                              <h5>Best price  </h5>
+                              <h5>Extra memory cost</h5>
+                              <h5>Extra storage cost</h5>
+                              <h5>Delivery Charge</h5>
+                              <hr>
+                              <h5>Total price </h5>
+                              
+                           </div>
+      
+                           <div class="col-md-6 ">
+                              <h5>$<span id="best-amount">1299</span></h5>
+                              <h5>$<span id="memory-amount">0</span></h5>
+                              <h5>$<span id="storage-amount">0</span></h5>
+                              <h5>$<span id="delivery-amount">0</span></h5>
+                              <hr>
+                              <h5>$<span id="total-price">1299</span></h5>
+                              
+                           </div>
+                        </div>
+                        <h5>Add promo code</h5>
+                              <input id="promo-code" type="text">
+                              <button id="promo" class="promo-btn mb-3">Apply</button>
+                     </div>
+
+                 
+             </div>
+             <hr>
+             <h1 class="text-center">Total: $<span id="after-discount">1299</span></h1>
+         </div>
+         
+     </div>
+ </section> 
+   <script src="app.js"></script> 
+</body>
+</html>
